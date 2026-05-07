@@ -12,7 +12,7 @@ export default function Navbar() {
         Agence <span>CyberEdge</span>
       </div>
       <button className={styles.cta} onClick={scrollToOffer}>
-        Ma boutique à 37€ →
+        Ma boutique à 39€ →
       </button>
     </nav>
   );

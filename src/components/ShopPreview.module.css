@@ -225,6 +225,32 @@
   border-radius: 2px;
 }
 
+/* ── Mobile controls (hidden by default) ────────────── */
+.mobileControls {
+  display: none;
+}
+
+.mobileArrow {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #1a1a1a;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  color: #c9a84c;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.mobileArrow:hover {
+  background: rgba(201, 168, 76, 0.12);
+  border-color: #c9a84c;
+}
+
 /* ── Dot indicators ──────────────────────────────────── */
 .dots {
   display: flex;
@@ -1241,5 +1267,21 @@
     width: 36px;
     height: 36px;
     font-size: 1rem;
+  }
+
+  .sideArrow {
+    display: none;
+  }
+
+  .mobileControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .dots {
+    display: none;
   }
 }

@@ -52,7 +52,7 @@ export default function ShopExamples() {
 
       <div className={styles.ctaWrap}>
         <button className={styles.ctaBtn} onClick={scrollToOffer}>
-          Je veux ma boutique à 37€ →
+          Je veux ma boutique à 39€ →
         </button>
       </div>
     </section>

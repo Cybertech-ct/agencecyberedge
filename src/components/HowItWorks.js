@@ -77,7 +77,7 @@ export default function HowItWorks() {
 
       <div className={styles.ctaBlock}>
         <button className={styles.ctaBtn} onClick={scrollToOffer}>
-          JE VEUX MA BOUTIQUE À 37€ →
+          JE VEUX MA BOUTIQUE À 39€ →
         </button>
         <p className={styles.ctaAssurance}>
           ✓ Livrée en 24h &nbsp;·&nbsp; ✓ Garantie 90 jours remboursée &nbsp;·&nbsp; ✓ Aucun frais caché

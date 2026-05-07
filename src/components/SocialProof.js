@@ -33,7 +33,7 @@ export default function SocialProof() {
 
       <div className={styles.ctaWrap}>
         <button className={styles.ctaBtn} onClick={scrollToOffer}>
-          🚀 Je me lance — 37€ aujourd'hui
+          🚀 Je me lance — 39€ aujourd'hui
         </button>
         <p className={styles.ctaSub}>Remboursé + 50€ offerts si aucune vente en 90 jours</p>
       </div>

@@ -54,7 +54,7 @@ export default function About() {
             Créer ma boutique maintenant →
           </button>
           <p className={styles.ctaSub}>
-            ✓ Livraison 24h &nbsp;·&nbsp; ✓ Garantie 90 jours &nbsp;·&nbsp; ✓ 37€ seulement
+            ✓ Livraison 24h &nbsp;·&nbsp; ✓ Garantie 90 jours &nbsp;·&nbsp; ✓ 39€ seulement
           </p>
         </div>
 

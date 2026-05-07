@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './ShopPreview.module.css';
 
 const SHOPS = [
@@ -390,6 +390,10 @@ export default function ShopPreview() {
   const [view, setView] = useState('desktop');
   const [idx, setIdx] = useState(0);
 
+  useEffect(() => {
+    if (window.innerWidth <= 768) setView('mobile');
+  }, []);
+
   const prev = () => setIdx(i => (i - 1 + SHOPS.length) % SHOPS.length);
   const next = () => setIdx(i => (i + 1) % SHOPS.length);
   const shop = SHOPS[idx];
@@ -424,7 +428,7 @@ export default function ShopPreview() {
 
       {/* Carousel */}
       <div className={styles.carousel}>
-        <button className={styles.arrow} onClick={prev} aria-label="Précédent">←</button>
+        <button className={`${styles.arrow} ${styles.sideArrow}`} onClick={prev} aria-label="Précédent">←</button>
 
         <div className={styles.frameWrap}>
           {view === 'desktop' ? (
@@ -457,10 +461,24 @@ export default function ShopPreview() {
           )}
         </div>
 
-        <button className={styles.arrow} onClick={next} aria-label="Suivant">→</button>
+        <button className={`${styles.arrow} ${styles.sideArrow}`} onClick={next} aria-label="Suivant">→</button>
       </div>
 
-      {/* Dot indicators */}
+      {/* Mobile controls — arrows + dots inline (hidden on desktop) */}
+      <div className={styles.mobileControls}>
+        <button className={styles.mobileArrow} onClick={prev} aria-label="Précédent">←</button>
+        {SHOPS.map((_, i) => (
+          <button
+            key={i}
+            className={`${styles.dotInd} ${i === idx ? styles.dotIndActive : ''}`}
+            onClick={() => setIdx(i)}
+            aria-label={`Boutique ${i + 1}`}
+          />
+        ))}
+        <button className={styles.mobileArrow} onClick={next} aria-label="Suivant">→</button>
+      </div>
+
+      {/* Dot indicators (desktop) */}
       <div className={styles.dots}>
         {SHOPS.map((_, i) => (
           <button
@@ -475,7 +493,7 @@ export default function ShopPreview() {
       {/* CTA */}
       <div className={styles.ctaWrap}>
         <button className={styles.ctaBtn} onClick={scrollToOffer}>
-          Je veux ma boutique à 37€ →
+          Je veux ma boutique à 39€ →
         </button>
       </div>
     </section>

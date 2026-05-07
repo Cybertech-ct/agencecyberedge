@@ -15,7 +15,7 @@ const BLOCKS = [
   {
     num: '2',
     title: 'Une stratégie long terme',
-    intro: 'Créer une boutique professionnelle ne coûte pas 37€. Nous investissons dans :',
+    intro: 'Créer une boutique professionnelle ne coûte pas 39€. Nous investissons dans :',
     points: [
       'Un design optimisé pour la conversion',
       'Une structure prête à vendre',
@@ -69,14 +69,14 @@ export default function WhyUs() {
 
         {/* Header */}
         <div className={styles.label}>TRANSPARENCE</div>
-        <h2 className={styles.title}>Pourquoi seulement 37€ ?</h2>
+        <h2 className={styles.title}>Pourquoi seulement 39€ ?</h2>
         <p className={styles.titleSub}>La réponse va peut-être vous surprendre.</p>
 
         {/* Intro */}
         <div className={styles.intro}>
           <p className={styles.introText}>
             En tant que partenaire Shopify, on me pose souvent la même question : comment est-il
-            possible de proposer des boutiques professionnelles prêtes à vendre pour 37€, alors
+            possible de proposer des boutiques professionnelles prêtes à vendre pour 39€, alors
             que certains les facturent plus de 1000€ ?
           </p>
           <p className={styles.introBold}>
@@ -127,7 +127,7 @@ export default function WhyUs() {
 
         {/* Conclusion */}
         <div className={styles.conclusion}>
-          <h4 className={styles.conclusionTitle}>Cette offre à 37€</h4>
+          <h4 className={styles.conclusionTitle}>Cette offre à 39€</h4>
           <p className={styles.conclusionText}>
             C'est notre manière de vous prouver notre valeur. Vous démarrez avec une boutique
             prête à vendre, sans prendre de risque. Et si les résultats sont là, on avance ensemble.

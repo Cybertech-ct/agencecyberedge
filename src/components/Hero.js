@@ -91,7 +91,7 @@ export default function Hero() {
             <div className={styles.pricingDivider} />
             <div className={styles.pricingRow}>
               <span className={styles.pricingTodayLabel}>VOTRE PRIX AUJOURD'HUI</span>
-              <span className={styles.pricingTodayAmt}>37€</span>
+              <span className={styles.pricingTodayAmt}>39€</span>
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function Hero() {
                 className={styles.input}
               />
               <button type="submit" className={styles.ctaBtn}>
-                <span className={styles.ctaMain}>OBTENEZ VOTRE BOUTIQUE À 37€</span>
+                <span className={styles.ctaMain}>OBTENEZ VOTRE BOUTIQUE À 39€</span>
                 <span className={styles.ctaSub}>Et faites votre première vente cette semaine</span>
               </button>
               <div className={styles.priceBlock}>
@@ -156,7 +156,7 @@ export default function Hero() {
                 </div>
                 <div className={styles.priceTodayRow}>
                   <span className={styles.priceTodayLabel}>Aujourd'hui seulement</span>
-                  <span className={styles.priceTodayAmt}>37€</span>
+                  <span className={styles.priceTodayAmt}>39€</span>
                 </div>
                 <p className={styles.priceNote}>Paiement unique · Aucun frais caché</p>
               </div>

@@ -47,14 +47,14 @@ export default function Offer() {
           <div className={styles.priceBoxLabel}>Valeur totale : 1 885€</div>
           <div className={styles.priceHeroOld}>1 885€</div>
           <div className={styles.priceHeroNew}>
-            <span className={styles.currency}>€</span>37
+            <span className={styles.currency}>€</span>39
           </div>
           <div className={styles.priceNote}>Paiement unique · Aucun frais caché · Aucun abonnement</div>
           <div className={styles.guarantee}>
-            <strong>Garantie béton 90 jours.</strong> Si tu ne fais aucune vente, on te rembourse les 37€{' '}
+            <strong>Garantie béton 90 jours.</strong> Si tu ne fais aucune vente, on te rembourse les 39€{' '}
             <em>et</em> on t'offre 50€ en bonus pour t'avoir fait perdre ton temps.
           </div>
-          <button className={styles.ctaBtn}>Je veux ma boutique à 37€ →</button>
+          <button className={styles.ctaBtn}>Je veux ma boutique à 39€ →</button>
           <div className={styles.ctaNote}>Livrée en moins de 24h · Partenaire officiel Shopify</div>
         </div>
       </div>

@@ -3,12 +3,12 @@ import styles from './FAQ.module.css';
 
 const faqs = [
   {
-    q: "Comment faites-vous ça pour seulement 37€ ? Est-ce une arnaque ?",
-    a: "En tant que partenaires officiels Shopify, on accède à des tarifs privilégiés sur les outils et applications. Notre modèle : on investit dans ta boutique aujourd'hui, et on grandit avec toi sur le long terme. Les 37€ couvrent une partie des coûts — le reste se rentabilise quand tu réussis.",
+    q: "Comment faites-vous ça pour seulement 39€ ? Est-ce une arnaque ?",
+    a: "En tant que partenaires officiels Shopify, on accède à des tarifs privilégiés sur les outils et applications. Notre modèle : on investit dans ta boutique aujourd'hui, et on grandit avec toi sur le long terme. Les 39€ couvrent une partie des coûts — le reste se rentabilise quand tu réussis.",
   },
   {
     q: "Dois-je avoir un compte Shopify avant de commander ?",
-    a: "Non — on s'occupe de tout. Tu recevras une boutique Shopify entièrement construite. Shopify offre une période d'essai gratuite, après quoi leur abonnement mensuel est géré directement entre toi et eux. Nous, on ne te facture que les 37€ une seule fois.",
+    a: "Non — on s'occupe de tout. Tu recevras une boutique Shopify entièrement construite. Shopify offre une période d'essai gratuite, après quoi leur abonnement mensuel est géré directement entre toi et eux. Nous, on ne te facture que les 39€ une seule fois.",
   },
   {
     q: "Combien de produits y aura-t-il sur ma boutique ?",
@@ -16,15 +16,15 @@ const faqs = [
   },
   {
     q: "Puis-je me faire rembourser si ça ne fonctionne pas ?",
-    a: "Oui — garantie 90 jours. Si tu n'as fait aucune vente après 90 jours d'utilisation, on rembourse les 37€ et on t'offre en plus 50€ pour t'avoir fait perdre ton temps. Les conditions s'appliquent.",
+    a: "Oui — garantie 90 jours. Si tu n'as fait aucune vente après 90 jours d'utilisation, on rembourse les 39€ et on t'offre en plus 50€ pour t'avoir fait perdre ton temps. Les conditions s'appliquent.",
   },
   {
     q: "Comment je reçois l'argent de mes ventes ?",
     a: "Tu connectes ton compte bancaire directement dans Shopify. Lorsque tes clients commandent, Shopify traite les paiements de façon sécurisée et te verse directement sur ton compte.",
   },
   {
-    q: "Y a-t-il d'autres frais en dehors des 37€ ?",
-    a: "Les 37€ couvrent uniquement la création de ta boutique par notre équipe. Shopify a son propre abonnement mensuel après la période d'essai. Aucun frais caché de notre côté.",
+    q: "Y a-t-il d'autres frais en dehors des 39€ ?",
+    a: "Les 39€ couvrent uniquement la création de ta boutique par notre équipe. Shopify a son propre abonnement mensuel après la période d'essai. Aucun frais caché de notre côté.",
   },
 ];
 
