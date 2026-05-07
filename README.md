@@ -1,6 +1,6 @@
-# Agence Digistal — Landing Page React
+# Agence CyberEdge — Landing Page React
 
-Landing page redesignée pour Agence Digistal, construite avec React et CSS Modules.
+Landing page redesignée pour Agence CyberEdge, construite avec React et CSS Modules.
 
 ## 🚀 Démarrer le projet
 
