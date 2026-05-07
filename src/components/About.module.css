@@ -1,0 +1,224 @@
+/* ══════════════════════════════════════════════════════
+   ABOUT — dark 2-column founder section
+   ══════════════════════════════════════════════════════ */
+
+.section {
+  background: #0a0a0a;
+  padding: 6rem 4rem;
+}
+
+.label {
+  font-size: 0.74rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #c9a84c;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  max-width: 600px;
+  margin-bottom: 3rem;
+}
+
+/* ── 2-column grid ───────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* ── Left column ─────────────────────────────────────── */
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.body {
+  font-size: 0.97rem;
+  color: #aaaaaa;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Stats */
+.statGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.statBox {
+  background: #111111;
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  transition: border-color 0.25s;
+}
+
+.statBox:hover {
+  border-color: rgba(201, 168, 76, 0.5);
+}
+
+.statNum {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #c9a84c;
+  line-height: 1.1;
+}
+
+.statLabel {
+  font-size: 0.78rem;
+  color: #777777;
+  margin-top: 0.3rem;
+}
+
+/* CTA */
+.ctaBtn {
+  background: #c9a84c;
+  color: #0a0a0a;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 1.1rem 2.5rem;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 0.5rem;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.02em;
+}
+
+.ctaBtn:hover {
+  background: #deba5d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(201, 168, 76, 0.35);
+}
+
+.ctaSub {
+  font-size: 0.8rem;
+  color: #555555;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── Right column — profile card ─────────────────────── */
+.right {
+  position: sticky;
+  top: 6rem;
+}
+
+.profileCard {
+  background: #111111;
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(201, 168, 76, 0.1);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.65rem;
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #c9a84c;
+  color: #0a0a0a;
+  font-family: 'Syne', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.founderName {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.founderTitle {
+  font-size: 0.82rem;
+  color: #777777;
+  margin: 0;
+}
+
+.founderStat {
+  font-size: 0.84rem;
+  color: #c9a84c;
+  font-weight: 600;
+  margin: 0.3rem 0 0;
+  line-height: 1.4;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(201, 168, 76, 0.25);
+  margin: 0.6rem 0;
+}
+
+.badgeList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  width: 100%;
+}
+
+.badge {
+  background: rgba(201, 168, 76, 0.08);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: left;
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .section {
+    padding: 5rem 2rem;
+  }
+
+  .grid {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .right {
+    position: static;
+  }
+
+  .title {
+    max-width: 100%;
+  }
+}

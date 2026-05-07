@@ -1,0 +1,134 @@
+.bar {
+  background: #0a0a0a;
+  padding: 2rem 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.inner {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.55rem;
+  background: #111111;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  border-radius: 16px;
+  padding: 1.5rem 2.5rem;
+}
+
+.title {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.title strong {
+  font-weight: 700;
+}
+
+.sub {
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.5;
+}
+
+/* Count line */
+.countLine {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.countText {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.countText strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.countMax {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+/* Progress bar */
+.trackWrap {
+  width: 100%;
+  max-width: 420px;
+}
+
+.track {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 100px;
+  transition: width 0.6s ease;
+}
+
+/* Live indicator */
+.liveRow {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.15rem;
+}
+
+.liveDot {
+  width: 7px;
+  height: 7px;
+  background: #4cbe7d;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(76, 190, 125, 0.45);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.3);
+    box-shadow: 0 0 0 6px rgba(76, 190, 125, 0);
+  }
+}
+
+.liveText {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.liveText strong {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 600;
+}
+
+.cap {
+  font-size: 0.74rem;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+@media (max-width: 768px) {
+  .bar {
+    padding: 1.5rem 1rem;
+  }
+
+  .inner {
+    padding: 1.2rem 1.2rem;
+  }
+}
