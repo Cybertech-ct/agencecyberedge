@@ -42,3 +42,27 @@
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(201, 168, 76, 0.3);
 }
+
+@media (max-width: 768px) {
+  .nav {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    padding: 0.8rem 1.2rem;
+    background: var(--black);
+  }
+
+  .logo {
+    font-size: 0.9rem;
+  }
+
+  .cta {
+    font-size: 0.72rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .badge {
+    display: none;
+  }
+}
